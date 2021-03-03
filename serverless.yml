@@ -26,3 +26,17 @@ resources:
               VolumeType: io1
               Iops: 1000
               DeleteOnTermination: false
+
+    TopicCloudwatchAlarm:
+      Type: AWS::SNS::Topic
+      Properties:
+        TopicName: topic-cloudwatch-alarm
+
+
+    TopicCloudwatchAlarmSubscription:
+      Type: AWS::SNS::Subscription
+      Properties:
+        Endpoint: isabel.santos2600@gmail.com
+        Protocol: email
+        TopicArn:
+          Ref: TopicCloudwatchAlarm

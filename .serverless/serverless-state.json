@@ -111,6 +111,22 @@
                 }
               ]
             }
+          },
+          "TopicCloudwatchAlarm": {
+            "Type": "AWS::SNS::Topic",
+            "Properties": {
+              "TopicName": "topic-cloudwatch-alarm"
+            }
+          },
+          "TopicCloudwatchAlarmSubscription": {
+            "Type": "AWS::SNS::Subscription",
+            "Properties": {
+              "Endpoint": "isabel.santos2600@gmail.com",
+              "Protocol": "email",
+              "TopicArn": {
+                "Ref": "TopicCloudwatchAlarm"
+              }
+            }
           }
         },
         "Outputs": {
@@ -235,6 +251,22 @@
               }
             ]
           }
+        },
+        "TopicCloudwatchAlarm": {
+          "Type": "AWS::SNS::Topic",
+          "Properties": {
+            "TopicName": "topic-cloudwatch-alarm"
+          }
+        },
+        "TopicCloudwatchAlarmSubscription": {
+          "Type": "AWS::SNS::Subscription",
+          "Properties": {
+            "Endpoint": "isabel.santos2600@gmail.com",
+            "Protocol": "email",
+            "TopicArn": {
+              "Ref": "TopicCloudwatchAlarm"
+            }
+          }
         }
       },
       "Outputs": {}
@@ -256,7 +288,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/ec2-ezops/dev/1614731258099-2021-03-03T00:27:38.099Z",
+    "artifactDirectoryName": "serverless/ec2-ezops/dev/1614731558948-2021-03-03T00:32:38.948Z",
     "artifact": ""
   }
 }
