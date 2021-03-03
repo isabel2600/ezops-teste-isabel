@@ -98,6 +98,17 @@
               "KeyName": "ezops-teste",
               "SecurityGroupIds": [
                 "sg-ed0d9fdc"
+              ],
+              "BlockDeviceMappings": [
+                {
+                  "DeviceName": "/dev/sdc",
+                  "Ebs": {
+                    "VolumeSize": 50,
+                    "VolumeType": "io1",
+                    "Iops": 1000,
+                    "DeleteOnTermination": false
+                  }
+                }
               ]
             }
           }
@@ -211,6 +222,17 @@
             "KeyName": "ezops-teste",
             "SecurityGroupIds": [
               "sg-ed0d9fdc"
+            ],
+            "BlockDeviceMappings": [
+              {
+                "DeviceName": "/dev/sdc",
+                "Ebs": {
+                  "VolumeSize": 50,
+                  "VolumeType": "io1",
+                  "Iops": 1000,
+                  "DeleteOnTermination": false
+                }
+              }
             ]
           }
         }
@@ -234,7 +256,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/ec2-ezops/dev/1614730019608-2021-03-03T00:06:59.608Z",
+    "artifactDirectoryName": "serverless/ec2-ezops/dev/1614731258099-2021-03-03T00:27:38.099Z",
     "artifact": ""
   }
 }
