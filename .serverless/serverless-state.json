@@ -89,6 +89,12 @@
             "Properties": {
               "ImageId": "ami-013f17f36f8b1fefb",
               "InstanceType": "t2.micro",
+              "Tags": [
+                {
+                  "Key": "Name",
+                  "Value": "ezops-teste"
+                }
+              ],
               "KeyName": "ezops-teste",
               "SecurityGroupIds": [
                 "sg-ed0d9fdc"
@@ -196,6 +202,12 @@
           "Properties": {
             "ImageId": "ami-013f17f36f8b1fefb",
             "InstanceType": "t2.micro",
+            "Tags": [
+              {
+                "Key": "Name",
+                "Value": "ezops-teste"
+              }
+            ],
             "KeyName": "ezops-teste",
             "SecurityGroupIds": [
               "sg-ed0d9fdc"
@@ -222,7 +234,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/ec2-ezops/dev/1614729658954-2021-03-03T00:00:58.954Z",
+    "artifactDirectoryName": "serverless/ec2-ezops/dev/1614730019608-2021-03-03T00:06:59.608Z",
     "artifact": ""
   }
 }

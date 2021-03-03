@@ -76,6 +76,12 @@
       "Properties": {
         "ImageId": "ami-013f17f36f8b1fefb",
         "InstanceType": "t2.micro",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "ezops-teste"
+          }
+        ],
         "KeyName": "ezops-teste",
         "SecurityGroupIds": [
           "sg-ed0d9fdc"
